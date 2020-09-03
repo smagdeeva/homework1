@@ -88,4 +88,28 @@ public class Main {
 
     }
 }
-*/
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Введите код города: ");
+        Scanner scanner = new Scanner(System.in);
+        int value = scanner.nextInt();
+         switch (value){
+             case 905:
+            System.out.println("Москва. Стоимость разговора: " + 4.15*10);
+            break;
+            case 194:
+                System.out.println("Саратов. Стоимость разговора: "+ 1.98*10);
+            break;
+             case 491:
+                 System.out.println("Краснодар. Стоимость разговора: "+ 2.69*10);
+                break;
+             case 800:
+                 System.out.println("Киров. Стоимость разговора: "+ 5*10);
+                 break;
+             default:
+                 System.out.println("Город не найден");
+        }
+        */
+
