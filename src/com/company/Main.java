@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-/*public class Main {
+public class Main {
 
     public static void main(String[] args) {
 	System.out.println("Введите число: ");
@@ -10,8 +10,8 @@ import java.util.Scanner;
         int value = scanner.nextInt();
         System.out.println(value % 10);
     }
-} */
-/*public class Main {
+}
+/* public class Main {
 
     public static void main(String[] args) {
         System.out.println("Введите целое трехзначное число: ");
@@ -111,5 +111,79 @@ public class Main {
              default:
                  System.out.println("Город не найден");
         }
-        */
 
+
+public class Main {
+
+    public static void main(String[] args) {
+        int [] numbers = {1,-10,5,6,45,23,-45,-34,0,32,56,-1,2,-2};
+        int max = 0;
+        int sum_plus = 0;
+        int count_plus = 0;
+        int sum_minus = 0;
+        int arg = 0;
+        int sum_negative = 0;
+        int count_minus = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if(max< numbers[i])
+                max = numbers[i];
+            if (numbers[i] >0 ) {
+                sum_plus = sum_plus + numbers [i];
+                count_plus ++;
+            }
+            if ((numbers[i] < 0) && (numbers[i] % 2 ==0)){
+                sum_minus =sum_minus + numbers[i];
+            }
+            if (numbers[i] < 0) {
+                sum_negative = sum_negative+ numbers [i];
+                count_minus ++;
+                arg = sum_negative/ count_minus;
+           }
+        }
+
+
+
+        System.out.println("Максимальное значение= " +max);
+        System.out.println("Сумма положительных элементов= " +sum_plus);
+        System.out.println("Сумма четных отрицательных элементов= " +sum_minus);
+        System.out.println("Количество положительных элементов= " +count_plus);
+        System.out.println("Cреднее арифметическое отрицательных элементов= " +arg);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] numbers = {5, 10, 51, -6, -5, 3, -10, -34, 0, 32, 56, -12, 24, -52};
+
+        for ( int i = numbers.length-1; i >= 0; i--) {
+            System.out.println(numbers[i]);
+        }
+
+
+
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] numbers = {5,10,0,-6,-5,3,0,-34,0,32,56,0,24,-52};
+        int j= 0;
+        for ( int i = 0; i<numbers.length;  i++) {
+            if (numbers[i] != 0) {
+                int temp= numbers[j];
+                numbers[j]=numbers[i];
+                numbers[i]=temp;
+                j++;
+            }
+
+            System.out.println(numbers[i]);
+        }
+
+
+
+    }
+}
+*/
