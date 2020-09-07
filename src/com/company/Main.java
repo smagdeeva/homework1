@@ -82,7 +82,7 @@ public class Main {
                 System.out.println("Краснодар. Стоимость разговора: " + 2.69 * time);
                 break;
             case 800:
-                System.out.println("Киров. Стоимость разговора: " + 5 * 10);
+                System.out.println("Киров. Стоимость разговора: " + 5 * time);
                 break;
             default:
                 System.out.println("Город не найден");
